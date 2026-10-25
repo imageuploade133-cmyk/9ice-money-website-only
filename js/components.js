@@ -1,12 +1,13 @@
 /**
  * 9ICE MONEY - Shared UI Components & Shell Manager
- * Handles reusable navigation header, top banner, footer, modals, and toast notifications.
+ * Handles reusable navigation header, top banner, footer, CTA banner, modals, and toast notifications.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     initTopBanner();
     initHeader();
     initFooter();
+    initCtaBanner();
     initModals();
     initToasts();
 });
@@ -143,6 +144,38 @@ function initHeader() {
     }
 }
 
+function initCtaBanner() {
+    const ctaContainer = document.getElementById('cta-container');
+    if (!ctaContainer) return;
+
+    ctaContainer.innerHTML = `
+    <section class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-10 sm:p-16 border border-brand-500/30 bg-gradient-to-r from-brand-900/90 via-slate-900 to-emerald-950 text-center relative overflow-hidden">
+                <div class="glow-effect top-0 left-1/2 -translate-x-1/2"></div>
+
+                <div class="max-w-3xl mx-auto space-y-6 relative z-10">
+                    <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+                        Experience Modern <span class="gradient-text">Financial Mastery</span>
+                    </h2>
+                    <p class="text-gray-300 text-base sm:text-lg">
+                        Download the 9ice Money mobile application and unlock institutional-grade wealth management in seconds.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                        <button type="button" onclick="toggleModal('downloadModal')" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-500 to-emerald-400 text-gray-950 font-extrabold rounded-2xl shadow-xl shadow-brand-500/30 hover:scale-105 transition-all flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-apple text-2xl"></i> App Store
+                        </button>
+                        <button type="button" onclick="toggleModal('downloadModal')" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-500 to-emerald-400 text-gray-950 font-extrabold rounded-2xl shadow-xl shadow-brand-500/30 hover:scale-105 transition-all flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-google-play text-2xl"></i> Google Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+
 function initFooter() {
     const footerContainer = document.getElementById('footer-container');
     if (!footerContainer) return;
@@ -190,7 +223,7 @@ function initFooter() {
                         <li><a href="products.html#transfers" class="hover:text-brand-400 transition">Instant Transfers</a></li>
                         <li><a href="products.html#savings" class="hover:text-brand-400 transition">High-Yield Savings</a></li>
                         <li><a href="products.html#cards" class="hover:text-brand-400 transition">Virtual Dollar Cards</a></li>
-                        <li><a href="products.html#services" class="hover:text-brand-400 transition">Corporate Treasury</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition">Corporate Treasury</a></li>
                     </ul>
                 </div>
 
