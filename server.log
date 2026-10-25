@@ -1,0 +1,6 @@
+127.0.0.1 - - [25/Oct/2026 12:32:20] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 12:32:20] "GET /js/components.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 12:32:22] "GET /about.html HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 12:32:23] "GET /products.html HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 12:32:25] "GET /services.html HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 12:32:26] "GET /support.html HTTP/1.1" 200 -
