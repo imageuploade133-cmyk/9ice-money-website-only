@@ -77,8 +77,8 @@ function initHeader() {
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-3 group">
                     <div class="relative">
-                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 via-brand-500 to-amber-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 group-hover:scale-105 transition-all duration-300">
-                            <i class="fa-solid font-black text-slate-950 text-xl tracking-tighter">9</i>
+                        <div class="w-11 h-11 rounded-xl bg-slate-900/90 border border-emerald-500/30 p-1.5 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 group-hover:scale-105 transition-all duration-300">
+                            <img src="assets/logo.png" alt="9ice Money Logo" class="w-full h-full object-contain filter drop-shadow">
                         </div>
                         <span class="absolute -top-1 -right-1 flex h-3 w-3">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
@@ -188,8 +188,8 @@ function initFooter() {
                 <!-- Brand Info -->
                 <div class="col-span-2 space-y-4">
                     <a href="index.html" class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center font-bold text-slate-950">
-                            9
+                        <div class="w-10 h-10 rounded-xl bg-slate-900/90 border border-emerald-500/30 p-1.5 flex items-center justify-center">
+                            <img src="assets/logo.png" alt="9ice Money Logo" class="w-full h-full object-contain">
                         </div>
                         <span class="text-xl font-extrabold text-white">9ICE <span class="gradient-text">MONEY</span></span>
                     </a>
@@ -262,8 +262,8 @@ function initModals() {
             </button>
 
             <div class="text-center space-y-4">
-                <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-slate-950 text-2xl font-bold mx-auto shadow-lg shadow-brand-500/30">
-                    9
+                <div class="w-16 h-16 rounded-2xl bg-slate-900 border border-emerald-500/30 p-2 flex items-center justify-center mx-auto shadow-lg shadow-brand-500/30">
+                    <img src="assets/logo.png" alt="9ice Money Logo" class="w-full h-full object-contain">
                 </div>
                 <h3 class="text-2xl font-extrabold text-white">Get 9ice Money App</h3>
                 <p class="text-xs text-gray-300">Scan the QR code or select your store to download immediately.</p>
