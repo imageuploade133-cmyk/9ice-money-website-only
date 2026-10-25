@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function getActivePage() {
-    const path = window.location.pathname;
-    if (path.includes('about.html')) return 'about';
-    if (path.includes('products.html')) return 'products';
-    if (path.includes('services.html')) return 'services';
-    if (path.includes('support.html')) return 'support';
+    const path = window.location.pathname.toLowerCase();
+    if (path.includes('about')) return 'about';
+    if (path.includes('products')) return 'products';
+    if (path.includes('services')) return 'services';
+    if (path.includes('support')) return 'support';
     return 'home';
 }
 
