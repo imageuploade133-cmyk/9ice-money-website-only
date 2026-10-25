@@ -80,56 +80,104 @@
 </head>
 <body class="antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col justify-between">
 
+    <!-- Top Announcement Bar (Luxury Touch) -->
+    <div class="bg-gradient-to-r from-emerald-950 via-slate-900 to-amber-950 text-xs py-2 px-4 border-b border-amber-500/20 text-center font-medium text-amber-200/90 flex justify-center items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px] font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-crown text-[10px]"></i> Luxury Banking
+        </span>
+        <span>Experience 9ice Money Black Edition • Enjoy up to 18% Annual Yield & VIP Concierge</span>
+        <a href="products.html" class="underline hover:text-white font-bold ml-1 transition-colors">Explore Vaults <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+    </div>
+
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 glass-card border-b border-gray-800/60 bg-opacity-90">
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-emerald-500/10 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform">
-                        <i class="fa-solid font-black text-white text-xl">9</i>
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative">
+                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 via-brand-500 to-amber-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 group-hover:scale-105 transition-all duration-300">
+                            <i class="fa-solid font-black text-slate-950 text-xl tracking-tighter">9</i>
+                        </div>
+                        <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                        </span>
                     </div>
-                    <span class="text-2xl font-extrabold tracking-tight text-white">9ICE <span class="gradient-text">MONEY</span></span>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-white flex items-center gap-1">
+                            9ICE <span class="gradient-text">MONEY</span>
+                        </span>
+                        <span class="text-[9px] uppercase tracking-widest text-amber-400/80 font-bold -mt-1">Private Wealth</span>
+                    </div>
                 </a>
 
                 <!-- Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-sm font-medium text-gray-300 hover:text-brand-500 transition-colors">Features</a>
-                    <a href="#how-it-works" class="text-sm font-medium text-gray-300 hover:text-brand-500 transition-colors">How It Works</a>
-                    <a href="#savings" class="text-sm font-medium text-gray-300 hover:text-brand-500 transition-colors">Savings Calculator</a>
-                    <a href="#security" class="text-sm font-medium text-gray-300 hover:text-brand-500 transition-colors">Security</a>
-                    <a href="#faq" class="text-sm font-medium text-gray-300 hover:text-brand-500 transition-colors">FAQ</a>
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 bg-slate-900/60 p-1.5 rounded-full border border-gray-800/80 backdrop-blur-md">
+                    <a href="index.html" class="px-4 py-2 rounded-full text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-house text-[11px]"></i> Home
+                    </a>
+                    <a href="about.html" class="px-4 py-2 rounded-full text-xs font-medium text-gray-300 hover:text-white hover:bg-gray-800/60 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-building text-[11px] text-gray-400"></i> About Us
+                    </a>
+                    <a href="products.html" class="px-4 py-2 rounded-full text-xs font-medium text-gray-300 hover:text-white hover:bg-gray-800/60 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-gem text-[11px] text-gray-400"></i> Products
+                    </a>
+                    <a href="services.html" class="px-4 py-2 rounded-full text-xs font-medium text-gray-300 hover:text-white hover:bg-gray-800/60 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-concierge-bell text-[11px] text-gray-400"></i> Services
+                    </a>
+                    <a href="support.html" class="px-4 py-2 rounded-full text-xs font-medium text-gray-300 hover:text-white hover:bg-gray-800/60 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-headset text-[11px] text-gray-400"></i> Support
+                    </a>
                 </nav>
 
                 <!-- Action Buttons -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <button onclick="toggleModal('loginModal')" class="text-sm font-semibold text-gray-300 hover:text-white px-4 py-2 rounded-xl transition-colors">
-                        Sign In
+                <div class="hidden md:flex items-center space-x-3">
+                    <button onclick="toggleModal('loginModal')" class="text-xs font-semibold text-gray-300 hover:text-white px-4 py-2.5 rounded-xl border border-gray-800 hover:border-gray-700 bg-slate-900/50 hover:bg-slate-800/80 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-lock text-[11px] text-brand-400"></i> Sign In
                     </button>
-                    <button onclick="toggleModal('downloadModal')" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-brand-500 to-emerald-400 px-5 py-2.5 text-sm font-bold text-gray-900 shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 transition-all">
-                        <span class="relative z-10 flex items-center gap-2">
-                            <i class="fa-solid fa-download"></i> Get App
-                        </span>
+                    <button onclick="toggleModal('downloadModal')" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-emerald-500 via-brand-500 to-amber-400 p-[1px] shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all">
+                        <div class="bg-slate-950 group-hover:bg-transparent px-5 py-2.5 rounded-[11px] transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-download text-xs text-amber-400 group-hover:text-slate-950 transition-colors"></i>
+                            <span class="text-xs font-bold text-white group-hover:text-slate-950 transition-colors">Get App</span>
+                        </div>
                     </button>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
-                    <i class="fa-solid fa-bars text-2xl"></i>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2 rounded-xl bg-slate-900 border border-gray-800">
+                    <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 bg-slate-900/95 px-4 pt-4 pb-6 space-y-3">
-            <a href="#features" class="block text-base font-medium text-gray-200 hover:text-brand-400 py-2">Features</a>
-            <a href="#how-it-works" class="block text-base font-medium text-gray-200 hover:text-brand-400 py-2">How It Works</a>
-            <a href="#savings" class="block text-base font-medium text-gray-200 hover:text-brand-400 py-2">Savings Calculator</a>
-            <a href="#security" class="block text-base font-medium text-gray-200 hover:text-brand-400 py-2">Security</a>
-            <a href="#faq" class="block text-base font-medium text-gray-200 hover:text-brand-400 py-2">FAQ</a>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800/80 bg-slate-950/95 backdrop-blur-xl px-4 pt-4 pb-6 space-y-3">
+            <div class="grid grid-cols-1 gap-1">
+                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-emerald-500/10 text-emerald-400 font-semibold text-sm border border-emerald-500/20">
+                    <i class="fa-solid fa-house text-emerald-400"></i> Home
+                </a>
+                <a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-slate-900 transition-all text-sm font-medium">
+                    <i class="fa-solid fa-building text-brand-400"></i> About Us
+                </a>
+                <a href="products.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-slate-900 transition-all text-sm font-medium">
+                    <i class="fa-solid fa-gem text-amber-400"></i> Products
+                </a>
+                <a href="services.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-slate-900 transition-all text-sm font-medium">
+                    <i class="fa-solid fa-concierge-bell text-cyan-400"></i> Services
+                </a>
+                <a href="support.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-slate-900 transition-all text-sm font-medium">
+                    <i class="fa-solid fa-headset text-indigo-400"></i> Support
+                </a>
+            </div>
+
             <div class="pt-4 border-t border-gray-800 flex flex-col gap-3">
-                <button onclick="toggleModal('loginModal')" class="w-full text-center font-semibold text-gray-300 py-2.5 rounded-xl border border-gray-700">Sign In</button>
-                <button onclick="toggleModal('downloadModal')" class="w-full text-center font-bold text-gray-900 bg-gradient-to-r from-brand-500 to-emerald-400 py-2.5 rounded-xl">Get 9ice Money App</button>
+                <button onclick="toggleModal('loginModal')" class="w-full text-center font-semibold text-gray-200 py-3 rounded-xl border border-gray-800 bg-slate-900 text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock text-brand-400"></i> Sign In
+                </button>
+                <button onclick="toggleModal('downloadModal')" class="w-full text-center font-bold text-gray-950 bg-gradient-to-r from-emerald-400 via-brand-500 to-amber-400 py-3 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20">
+                    <i class="fa-solid fa-download"></i> Get 9ice Money App
+                </button>
             </div>
         </div>
     </header>
@@ -796,23 +844,24 @@
 
                 <!-- Column 1 -->
                 <div>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Products</h4>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigation</h4>
                     <ul class="space-y-2.5 text-xs">
-                        <li><a href="#features" class="hover:text-brand-400 transition">Transfers</a></li>
-                        <li><a href="#savings" class="hover:text-brand-400 transition">High-Yield Savings</a></li>
-                        <li><a href="#features" class="hover:text-brand-400 transition">Virtual Dollar Card</a></li>
-                        <li><a href="#features" class="hover:text-brand-400 transition">Utility Payments</a></li>
+                        <li><a href="index.html" class="hover:text-brand-400 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-400 transition">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-brand-400 transition">Products & Vaults</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition">Bespoke Services</a></li>
+                        <li><a href="support.html" class="hover:text-brand-400 transition">Help & Support</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 2 -->
                 <div>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Company</h4>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Products</h4>
                     <ul class="space-y-2.5 text-xs">
-                        <li><a href="#" class="hover:text-brand-400 transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition">Careers <span class="bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded text-[10px] font-bold ml-1">Hiring</span></a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition">Press Kit</a></li>
-                        <li><a href="#" class="hover:text-brand-400 transition">Contact Support</a></li>
+                        <li><a href="products.html#transfers" class="hover:text-brand-400 transition">Instant Transfers</a></li>
+                        <li><a href="products.html#savings" class="hover:text-brand-400 transition">High-Yield Savings</a></li>
+                        <li><a href="products.html#cards" class="hover:text-brand-400 transition">Virtual Dollar Cards</a></li>
+                        <li><a href="products.html#corporate" class="hover:text-brand-400 transition">Corporate Treasury</a></li>
                     </ul>
                 </div>
 
