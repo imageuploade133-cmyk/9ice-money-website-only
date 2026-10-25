@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - 9ICE MONEY | Luxury Financial Suite & Vaults</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            accent: '#00e676',
+                            dark: '#0B132B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Top Announcement Bar Container -->
+    <div id="top-banner-container"></div>
+
+    <!-- Header Navigation Container -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="relative pt-16 pb-20 overflow-hidden border-b border-gray-800/60 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+            <div class="glow-effect -top-20 right-1/4"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-brand-500/30 text-brand-400 text-xs font-semibold mb-6">
+                    <i class="fa-solid fa-vault text-amber-400"></i> Elite Financial Ecosystem
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white max-w-4xl mx-auto leading-tight mb-6">
+                    World-Class <span class="gradient-text">Products</span> Tailored for Sovereign Wealth
+                </h1>
+
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed mb-8">
+                    From daily high-yield interest vaults to bespoke Black Obsidian metal cards, discover our complete suite of private banking tools.
+                </p>
+
+                <!-- Anchor Navigation Bar -->
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <a href="#savings" class="px-5 py-2.5 rounded-xl bg-slate-900 border border-gray-800 text-xs font-bold text-gray-300 hover:text-white hover:border-brand-500/50 transition">
+                        <i class="fa-solid fa-piggy-bank text-brand-400 mr-2"></i> High-Yield Vaults
+                    </a>
+                    <a href="#cards" class="px-5 py-2.5 rounded-xl bg-slate-900 border border-gray-800 text-xs font-bold text-gray-300 hover:text-white hover:border-amber-500/50 transition">
+                        <i class="fa-solid fa-credit-card text-amber-400 mr-2"></i> Luxury Cards
+                    </a>
+                    <a href="#transfers" class="px-5 py-2.5 rounded-xl bg-slate-900 border border-gray-800 text-xs font-bold text-gray-300 hover:text-white hover:border-teal-500/50 transition">
+                        <i class="fa-solid fa-bolt text-teal-400 mr-2"></i> Instant Transfers
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product 1: High Yield Savings Vaults -->
+        <section id="savings" class="py-24 border-b border-gray-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="px-3.5 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-bold uppercase tracking-wider">
+                            Daily Compounding Vaults
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Up to 18% Annual Yield, Paid Daily into Your Wallet</h2>
+                        <p class="text-gray-300 text-base leading-relaxed">
+                            Beat inflation effortlessly. Our wealth vaults allow you to earn industry-leading annual interest rates with zero lock penalties and daily automated interest disbursements.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-5 glass-card rounded-2xl border border-emerald-500/20">
+                                <h3 class="text-lg font-bold text-white mb-1">Flexi-Vault</h3>
+                                <p class="text-2xl font-black text-brand-400 mb-2">12% p.a.</p>
+                                <p class="text-xs text-gray-400">Instant daily withdrawal, zero lockup fee, automated rounding savings available.</p>
+                            </div>
+
+                            <div class="p-5 glass-card rounded-2xl border border-amber-500/20">
+                                <h3 class="text-lg font-bold text-white mb-1">Black Edition Lock</h3>
+                                <p class="text-2xl font-black text-amber-400 mb-2">18% p.a.</p>
+                                <p class="text-xs text-gray-400">Fixed 90 to 365-day term for maximum yield compounding and capital growth.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" onclick="toggleModal('downloadModal')" class="px-8 py-3.5 bg-gradient-to-r from-brand-500 to-emerald-400 text-slate-950 font-bold rounded-xl shadow-lg hover:shadow-brand-500/30 transition">
+                            Open Your High-Yield Vault
+                        </button>
+                    </div>
+
+                    <!-- Interactive Vault Visual Card -->
+                    <div class="lg:col-span-6 glass-card p-8 rounded-3xl border border-gray-700 bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/50">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-2xl font-bold">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">Target Vault #042</h3>
+                                    <p class="text-xs text-gray-400">Active Daily Compounding</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">18% ROI Active</span>
+                        </div>
+
+                        <div class="space-y-4 mb-6">
+                            <div class="flex justify-between text-xs font-semibold text-gray-400">
+                                <span>Saved Target Progress</span>
+                                <span>₦7,500,000 / ₦10,000,000</span>
+                            </div>
+                            <div class="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-brand-500 via-emerald-400 to-amber-400 w-3/4 rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 pt-4 border-t border-gray-800 text-center">
+                            <div class="p-3 bg-slate-950/60 rounded-xl">
+                                <p class="text-[10px] text-gray-400 uppercase font-bold">Today's Earned Interest</p>
+                                <p class="text-lg font-extrabold text-brand-400 mt-1">+₦3,698.63</p>
+                            </div>
+                            <div class="p-3 bg-slate-950/60 rounded-xl">
+                                <p class="text-[10px] text-gray-400 uppercase font-bold">Interest Payout Frequency</p>
+                                <p class="text-lg font-extrabold text-white mt-1">Every Morning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Product 2: Cards Suite -->
+        <section id="cards" class="py-24 bg-slate-950/80 border-b border-gray-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs font-bold text-amber-400 uppercase tracking-widest">Card Issuance</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">Global Cards Engineered for Unlimited Purchasing</p>
+                    <p class="text-gray-400 text-base">Spend locally in Naira or internationally in USD & EUR with instant card creation and zero declined transaction fees.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Black Obsidian Metal -->
+                    <div class="glass-card glass-card-hover p-8 rounded-3xl border border-amber-500/30 relative overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-6">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Black Obsidian Metal Card</h3>
+                            <p class="text-xs text-amber-300 font-semibold mb-4">Physical Heavy Steel Custom Card</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Heavyweight 18g laser-etched stainless steel card with unlimited ATM withdrawals, VIP airport lounge access (Priority Pass), and dedicated concierge.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 text-xs text-gray-300 border-t border-gray-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Unlimited Daily Limit</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Free Global Express Delivery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Virtual Dollar Card -->
+                    <div class="glass-card glass-card-hover p-8 rounded-3xl border border-emerald-500/30 relative overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-xl font-bold mb-6">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Virtual Dollar Card</h3>
+                            <p class="text-xs text-emerald-400 font-semibold mb-4">Instant Global Digital Checkout</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Generated in 10 seconds. Works smoothly for AWS, Netflix, Meta Ads, Apple Pay, Google Ads, and international luxury stores.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 text-xs text-gray-300 border-t border-gray-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 100% Checkout Acceptance Rate</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Zero Monthly Card Maintenance Fee</li>
+                        </ul>
+                    </div>
+
+                    <!-- Virtual Euro & GBP Card -->
+                    <div class="glass-card glass-card-hover p-8 rounded-3xl border border-cyan-500/30 relative overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold mb-6">
+                                <i class="fa-solid fa-euro-sign"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Virtual EUR & GBP Card</h3>
+                            <p class="text-xs text-cyan-400 font-semibold mb-4">European & UK Merchant Card</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Settle payments across European merchants directly in local EUR/GBP currencies without currency conversion fees.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 text-xs text-gray-300 border-t border-gray-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> SEPA / UK Faster Payments Supported</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Real-time Interbank FX Rates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product 3: Instant Transfers -->
+        <section id="transfers" class="py-24 border-b border-gray-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-bold text-brand-400 uppercase tracking-widest">Ultra-Fast Infrastructure</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Local Transfers Delivered Under 0.5 Seconds</h2>
+                        <p class="text-gray-300 text-base leading-relaxed">
+                            No pending states, no lost transactions. Direct integrations with central switches ensure instantaneous credit alerts and 100% free transfer fees nationwide.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-4 glass-card rounded-2xl">
+                                <i class="fa-solid fa-bolt text-brand-400 text-2xl"></i>
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">Instant SMS & App Credit Push Alerts</h3>
+                                    <p class="text-xs text-gray-400">Sender and recipient get verified credit alerts within milliseconds.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-4 glass-card rounded-2xl">
+                                <i class="fa-solid fa-receipt text-teal-400 text-2xl"></i>
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">Automated Utility & Bulk Payroll Processing</h3>
+                                    <p class="text-xs text-gray-400">Pay 100+ employees or vendor invoices in a single bulk payment click.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6">
+                        <!-- Transfer Speed Visual -->
+                        <div class="glass-card p-8 rounded-3xl border border-gray-700 space-y-6 text-center">
+                            <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-brand-500 to-emerald-400 text-slate-950 flex items-center justify-center text-4xl mx-auto font-black shadow-lg shadow-brand-500/30">
+                                0.48s
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Average Payment Settlement Latency</h3>
+                            <p class="text-xs text-gray-400 max-w-sm mx-auto">Monitored live across 50,000+ daily bank switch transactions in real-time.</p>
+
+                            <div class="pt-4 border-t border-gray-800 flex justify-around text-xs">
+                                <div>
+                                    <span class="text-gray-400 block">Bank Switch Uptime</span>
+                                    <span class="font-bold text-emerald-400 text-sm">99.998%</span>
+                                </div>
+                                <div>
+                                    <span class="text-gray-400 block">Transfer Fees</span>
+                                    <span class="font-bold text-white text-sm">₦0.00 Forever</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Shared CTA Banner Container -->
+        <div id="cta-container"></div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Modals Container -->
+    <div id="modals-container"></div>
+
+    <!-- Shared UI Components Script -->
+    <script src="js/components.js"></script>
+</body>
+</html>
